@@ -7,7 +7,15 @@ function Hero() {
         My First React Page
       </h1>
       <LabWeek week="10" title="Learning React Children">
-        <p className="mt-2">Github repo:</p>
+        <p className="mt-2">
+          Github repo:{" "}
+          <a
+            href="https://github.com/cmobley001/react-introduction"
+            target="_blank"
+          >
+            https://github.com/cmobley001/react-introduction
+          </a>
+        </p>
       </LabWeek>
     </>
   );
