@@ -27,25 +27,27 @@ const App = () => {
   return (
     <>
       <Navbar />
-      <div className="p-12 flex flex-col min-h-screen">
-        <Hero />
-        <Main>
-          <Flex classNames="justify-center gap-2.5">
-            <Button title="Click Me" />
-            <Button title="And Click Me" />
-          </Flex>
-          <div
-            className="flex gap-x-12 my-12 flex-wrap gap-y-6"
-            id="card-container"
-          >
-            {cards.map((card, index) => (
-              <Card key={index} title={card.title} image={card.img} />
-            ))}
-          </div>
-        </Main>
-        <Content />
+      <div className="flex flex-col min-h-screen">
+        <div className="p-12 flex-1">
+          <Hero />
+          <Main>
+            <Flex classNames="justify-center gap-2.5">
+              <Button title="Click Me" />
+              <Button title="And Click Me" />
+            </Flex>
+            <div
+              className="flex gap-x-12 my-12 flex-wrap gap-y-6"
+              id="card-container"
+            >
+              {cards.map((card, index) => (
+                <Card key={index} title={card.title} image={card.img} />
+              ))}
+            </div>
+          </Main>
+          <Content />
+        </div>
+        <Footer />
       </div>
-      <Footer />
     </>
   );
 };
